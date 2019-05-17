@@ -17,8 +17,8 @@ It is only for raspberry pi which can reach about 38 fps  even faster. Here is t
    from raspberry-pi-python2 import mat
    from raspberry-pi-python2 import libfcnn
    image = cv2.imread("yourimage.jpg")
-   #your can scale down your image to speed up.
-   #this lib can minimal size is 12 by 12 pixle
+   #you can scale down your image to speed up.
+   #minimal face which can be detected is 12*12
    #image = cv2.resize(image,(0,0),fx=0.4,fy=0.4)
    rect = libfcnn.inference(mat.Mat.from_array(resized_frame),4)
    # rect is a list of [xmin,ymin,height,weight]
