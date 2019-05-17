@@ -2,7 +2,7 @@
 
 This a python binding for lib facedetection([https://github.com/ShiqiYu/libfacedetection](https://github.com/ShiqiYu/libfacedetection))
 
-It is only for raspberry pi which can reach about 38 fps  even faster. Here is the [output](https://github.com/CharlieXie/libfacedetection-python-bindings/tree/master/results)
+It is only tested on  raspberry pi 3B which can reach about 38 fps  even faster. Here is the [output](https://github.com/CharlieXie/libfacedetection-python-bindings/tree/master/results)
 
 ## How to use
 
@@ -27,7 +27,7 @@ It is only for raspberry pi which can reach about 38 fps  even faster. Here is t
    if rect[2]!=0:
     cv2.rectangle(image,(xmin,ymin),(xmax, ymax),(255,0, 0),2)
     while 1:
-     cv2.imshow("Frame",frame)
+     cv2.imshow("Frame",image)
      key = cv2.waitKey(1) & 0xFF
      if key == ord("q"):
        break
