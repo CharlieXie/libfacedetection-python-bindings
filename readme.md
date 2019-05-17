@@ -1,10 +1,8 @@
 ## High-Speed(about 38 fps) face detector for python:
 
---------------
-
 This a python binding for lib facedetection([https://github.com/ShiqiYu/libfacedetection](https://github.com/ShiqiYu/libfacedetection))
 
-This binding is only for raspberry pi which can reach about 38 fps even faster. Here is the [output](https://github.com/CharlieXie/libfacedetection-python-bindings/tree/master/results).
+It is only for raspberry pi which can reach about 38 fps  even faster. Here is the [output](https://github.com/CharlieXie/libfacedetection-python-bindings/tree/master/results)
 
 ## How to use
 
@@ -24,7 +22,7 @@ This binding is only for raspberry pi which can reach about 38 fps even faster. 
    #image = cv2.resize(image,(0,0),fx=0.4,fy=0.4)
    rect = libfcnn.inference(mat.Mat.from_array(resized_frame),4)
    # rect is a list of [xmin,ymin,height,weight]
-   # now this lib just return the biggest faces coordinate in the image
+   # now this lib just returns coordinate of the biggest face in the image
    # if no face detected , rect is [0,0,0,0]
    if rect[2]!=0:
      cv2.rectangle(frame, (xmin,ymin), (xmax, ymax), (255,0, 0), 2)
@@ -36,4 +34,4 @@ This binding is only for raspberry pi which can reach about 38 fps even faster. 
    ```
 
 
-NOTE: Now this lib just return the biggest faces coordinate in the image. I will finish this when I can spare some time.
+NOTE: Now this lib just returns coordinate of the biggest face in the image. I will finish this when I can spare some time.
