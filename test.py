@@ -4,13 +4,17 @@ import time
 from collections import deque
 import sys
 PY2 = sys.version_info[0] == 2
+print(PY2)
 PY3 = sys.version_info[0] == 3
+print(PY3)
 if PY2:
-    from raspberry-pi-python2 import mat
-    from raspberry-pi-python2 import libfcnn
+    path = "rbp_py2"
+    sys.path.insert(0,path)
+    import mat
+    import libfcnn
 elif PY3:
-    from raspberry-pi-python3 import mat
-    from raspberry-pi-python3 import libfcnn
+    from rbp_py3 import mat
+    from rbp_py3 import libfcnn
 
 
 vc = cv2.VideoCapture("videos/neck-exercise.mp4")
