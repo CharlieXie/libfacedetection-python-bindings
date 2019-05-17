@@ -1,6 +1,6 @@
 ## High-Speed(about 38 fps) face detector for python:
 
-This a python binding for lib facedetection([https://github.com/ShiqiYu/libfacedetection](https://github.com/ShiqiYu/libfacedetection))
+This a python binding for libfacedetection([https://github.com/ShiqiYu/libfacedetection](https://github.com/ShiqiYu/libfacedetection))
 
 It is only tested on  raspberry pi 3B which can reach about 38 fps  even faster. Here is the [output](https://github.com/CharlieXie/libfacedetection-python-bindings/tree/master/results)
 
