@@ -1,4 +1,4 @@
-## High-Speed(about 38 fps) face detector for python:
+## High-Speed(about 38 fps) face detector for python
 
 This a python binding for libfacedetection([https://github.com/ShiqiYu/libfacedetection](https://github.com/ShiqiYu/libfacedetection)).
 
