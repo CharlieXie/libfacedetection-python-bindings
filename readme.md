@@ -1,14 +1,14 @@
 ## High-Speed(about 38 fps) face detector for python:
 
-This a python binding for libfacedetection([https://github.com/ShiqiYu/libfacedetection](https://github.com/ShiqiYu/libfacedetection))
+This a python binding for libfacedetection([https://github.com/ShiqiYu/libfacedetection](https://github.com/ShiqiYu/libfacedetection)).
 
-It is only tested on  raspberry pi 3B which can reach about 38 fps  even faster. Here is the [output](https://github.com/CharlieXie/libfacedetection-python-bindings/tree/master/results)
+It is only tested on  raspberry pi 3B which can reach about 38 fps  even faster. Here is the [output](https://github.com/CharlieXie/libfacedetection-python-bindings/tree/master/results).
 
 ## How to use
 
-1. You can just download the repo and run test.py which will find right lib according to default version of python
+1. You can just download the repo and run test.py which will find right lib according to default version of python in your system.
 
-2. Or here is the example
+2. Or here is an example.
 
    ```python
    import cv2
