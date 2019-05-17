@@ -4,9 +4,7 @@ import time
 from collections import deque
 import sys
 PY2 = sys.version_info[0] == 2
-print(PY2)
 PY3 = sys.version_info[0] == 3
-print(PY3)
 if PY2:
     path = "rbp_py2"
     sys.path.insert(0,path)
