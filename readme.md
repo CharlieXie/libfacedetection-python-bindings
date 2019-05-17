@@ -17,9 +17,9 @@ It is only tested on  raspberry pi 3B which can reach about 38 fps  even faster.
    from rbp_py2 import mat
    from rbp_py2 import libfcnn
    image = cv2.imread("yourimage.jpg")
-   #you can scale down your image to speed up.
-   #minimal face which can be detected is 12*12
-   #image = cv2.resize(image,(0,0),fx=0.4,fy=0.4)
+   # you can scale down your image to speed up.
+   # minimal face which can be detected is 12*12
+   # image = cv2.resize(image,(0,0),fx=0.4,fy=0.4)
    rect = libfcnn.inference(mat.Mat.from_array(resized_frame),4)
    # rect is a list of [xmin,ymin,height,weight]
    # now this lib just returns coordinate of the biggest face in the image
