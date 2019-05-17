@@ -25,9 +25,9 @@ It is only for raspberry pi which can reach about 38 fps  even faster. Here is t
    # now this lib just returns coordinate of the biggest face in the image
    # if no face detected , rect is [0,0,0,0]
    if rect[2]!=0:
-     cv2.rectangle(frame, (xmin,ymin), (xmax, ymax), (255,0, 0), 2)
+    cv2.rectangle(image,(xmin,ymin),(xmax, ymax),(255,0, 0),2)
     while 1:
-    	cv2.imshow("Frame",frame)
+     cv2.imshow("Frame",frame)
      key = cv2.waitKey(1) & 0xFF
      if key == ord("q"):
        break
