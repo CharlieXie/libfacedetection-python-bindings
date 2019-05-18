@@ -21,7 +21,7 @@ scaler = 8
 # Setting video writer for RBP 3 model B. This may be slight different for different devices.
 vid_out = cv2.VideoWriter("results/result.mp4",0x00000021,30.0,(720,720),isColor=1)
 
-# Create deque to store frames. 300 here is total frames of neck-exercise, because I know it.
+# Create deque to store frames. 300 here is total frames of neck-exercise.mp4, because I know it.
 fra_que = deque([],300)
 while 1:
     ts = time.time()
